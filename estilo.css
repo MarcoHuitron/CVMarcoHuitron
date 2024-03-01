@@ -214,7 +214,7 @@ html{
 
 .habilidades .contenido-seccion .fila{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     margin-top: 30px;
 }
 
@@ -230,8 +230,9 @@ html{
 
 .habilidades .contenido-seccion .fila .col-btn{
     display: flex;
-    text-align: center;
-    padding: 0 400px;
+    align-items: center;
+    position: relative;
+    margin-top: auto;
 }
 
 
