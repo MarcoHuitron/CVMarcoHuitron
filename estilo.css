@@ -378,3 +378,14 @@ body{
     text-align: center;
     margin-bottom: 20px;
 }
+
+.animacion {
+    opacity: 0; /* Ocultar antes de animar */
+    visibility: hidden; /* Evitar que ocupen espacio hasta que aparezcan */
+ }
+ 
+ .animacion.visible {
+    opacity: 1;
+    visibility: visible;
+ }
+ 

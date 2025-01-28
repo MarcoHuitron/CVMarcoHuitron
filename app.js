@@ -89,7 +89,4 @@ function pintarBarra(id_barra, cantidad, indice, interval){
     }
 }
 
-//detecto el scrolling del mouse para aplicar la animación de la barra
-window.onscroll = function(){
-    efectoHabilidades();
-}
+ 
