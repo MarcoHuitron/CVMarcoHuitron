@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 *{
     font-family: "Rubik";
@@ -64,6 +63,33 @@ html{
     margin-top: auto;
 }
 
+/* Botones modernos para habilidades */
+.btn-habilidad {
+  background: linear-gradient(90deg, #00ffcc 60%, #007932 100%);
+  color: #1a1a1a;
+  font-weight: bold;
+  border: none;
+  border-radius: 30px;
+  padding: 12px 28px;
+  font-size: 1.1rem;
+  box-shadow: 0 4px 16px rgba(0,255,204,0.10);
+  transition: background 0.3s, color 0.3s, transform 0.2s;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  letter-spacing: 1px;
+}
+
+.btn-habilidad i {
+  font-size: 1.2em;
+}
+
+.btn-habilidad:hover, .btn-habilidad:focus {
+  background: linear-gradient(90deg, #007932 60%, #00ffcc 100%);
+  color: #fff;
+  transform: translateY(-2px) scale(1.04);
+  text-decoration: none;
+}
 
 /*seccion resumen*/
 .resumen{
@@ -266,5 +292,177 @@ html{
       display: block;
     }
   }
-  
-  
+
+  /* Modern glass effect for sections */
+.glass {
+  background: rgba(31, 31, 31, 0.85);
+  border-radius: 18px;
+  box-shadow: 0 8px 32px 0 rgba(0,255,204,0.10);
+  padding: 32px 24px;
+  margin-bottom: 40px;
+  backdrop-filter: blur(2px);
+}
+
+/* Fade-in animation */
+.fade-in {
+  animation: fadeInUp 1s;
+}
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(40px);}
+  to { opacity: 1; transform: translateY(0);}
+}
+
+/* About cards */
+.about-card {
+  background: #23272f;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0,255,204,0.08);
+  padding: 24px 18px;
+  color: #e0e0e0;
+  min-height: 220px;
+  transition: transform 0.2s;
+}
+.about-card:hover {
+  transform: translateY(-6px) scale(1.03);
+  box-shadow: 0 8px 24px rgba(0,255,204,0.15);
+}
+.about-card i {
+  font-size: 2.2rem;
+  color: #00ffcc;
+  margin-bottom: 10px;
+}
+
+/* Skills grid */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+  gap: 18px;
+  margin-top: 30px;
+}
+.skills-grid span {
+  background: #1a1a1a;
+  color: #00ffcc;
+  font-weight: 600;
+  padding: 12px 0;
+  border-radius: 8px;
+  box-shadow: 0 1px 6px rgba(0,255,204,0.07);
+  transition: background 0.2s, color 0.2s;
+  text-align: center;
+}
+.skills-grid span:hover {
+  background: #00ffcc;
+  color: #1a1a1a;
+}
+
+/* Education and Experience cards */
+.edu-card, .exp-card {
+  background: #23272f;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0,255,204,0.08);
+  padding: 24px 18px;
+  color: #e0e0e0;
+  min-height: 220px;
+}
+.edu-block {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  margin-top: 18px;
+}
+.edu-date {
+  background: #00ffcc;
+  color: #1a1a1a;
+  font-weight: bold;
+  border-radius: 6px;
+  padding: 8px 14px;
+  min-width: 110px;
+  text-align: center;
+}
+
+/* Timeline for experience */
+.timeline {
+  position: relative;
+  margin-top: 18px;
+  margin-left: 18px;
+}
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 8px;
+  top: 0;
+  width: 3px;
+  height: 100%;
+  background: linear-gradient(to bottom, #00ffcc 0%, #23272f 100%);
+}
+.timeline-item {
+  position: relative;
+  margin-bottom: 32px;
+  padding-left: 32px;
+}
+.timeline-dot {
+  position: absolute;
+  left: -2px;
+  top: 8px;
+  width: 18px;
+  height: 18px;
+  background: #00ffcc;
+  border-radius: 50%;
+  border: 3px solid #23272f;
+  box-shadow: 0 0 8px #00ffcc80;
+}
+.timeline-date {
+  color: #00ffcc;
+  font-weight: bold;
+  font-size: 1rem;
+}
+.timeline-content {
+  background: #1a1a1a;
+  border-radius: 8px;
+  padding: 10px 16px;
+  margin-top: 4px;
+  color: #e0e0e0;
+  box-shadow: 0 1px 6px rgba(0,255,204,0.07);
+}
+
+/* Modern card for portfolio */
+.card-modern {
+  background: #23272f;
+  border: none;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(0,255,204,0.10);
+  transition: transform 0.2s, box-shadow 0.2s;
+  overflow: hidden;
+}
+.card-modern:hover {
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 8px 32px rgba(0,255,204,0.18);
+}
+.card-modern .card-img-top {
+  height: 180px;
+  object-fit: cover;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+}
+.card-modern .card-title {
+  color: #00ffcc;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+.card-modern .card-text {
+  color: #e0e0e0;
+  font-size: 1rem;
+}
+.card-modern .btn-secondary {
+  background: linear-gradient(90deg, #00ffcc 60%, #007932 100%);
+  color: #1a1a1a;
+  border: none;
+  font-weight: bold;
+  transition: background 0.2s, color 0.2s;
+}
+.card-modern .btn-secondary:hover {
+  background: linear-gradient(90deg, #007932 60%, #00ffcc 100%);
+  color: #fff;
+}
+
+
+
